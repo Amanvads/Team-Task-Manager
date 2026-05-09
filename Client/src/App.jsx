@@ -6,6 +6,8 @@ import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
 import Projects from "./pages/Projects";
 import ProjectDetails from "./pages/ProjectDetails";
+import CreateProject from "./pages/CreateProject";
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
 
         <Route element={<ProtectedRoute />}>
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/create-project" element={<CreateProject />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:id" element={<ProjectDetails />} />
         </Route>

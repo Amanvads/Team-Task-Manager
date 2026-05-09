@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dashboard {
+  min-height: 100vh;
+  padding: 30px;
+  background: #f4f7fb;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.dashboard-header h1 {
+  font-size: 34px;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.dashboard-header p {
+  color: #64748b;
+  font-size: 16px;
+}
+
+.dashboard-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+
+.primary-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.primary-btn:hover {
+  background: #1d4ed8;
+}
+
+.secondary-btn {
+  background: #0f172a;
+  color: white;
+}
+
+.secondary-btn:hover {
+  background: #020617;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  padding: 28px;
+  border-radius: 18px;
+  color: white;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.stat-card p {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.total-card {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+}
+
+.tasks-card {
+  background: linear-gradient(135deg, #7c3aed, #6d28d9);
+}
+
+.todo-card {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.progress-card {
+  background: linear-gradient(135deg, #06b6d4, #0891b2);
+}
+
+.done-card {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.overdue-card {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.status-section {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.status-section h2 {
+  margin-bottom: 25px;
+  color: #1e293b;
+}
+
+.status-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.status-box {
+  flex: 1;
+  min-width: 220px;
+  padding: 25px;
+  border-radius: 16px;
+  color: white;
+}
+
+.status-box h4 {
+  margin: 15px 0 10px;
+  font-size: 18px;
+}
+
+.status-box p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.todo {
+  background: #f59e0b;
+}
+
+.progress {
+  background: #06b6d4;
+}
+
+.done {
+  background: #10b981;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: white;
+  display: inline-block;
+}
+
+.error {
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
