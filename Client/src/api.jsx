@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "successful-mindfulness-production-41c5.up.railway.app"
+  baseURL: import.meta.env.VITE_API_URL || "team-task-manager-production-c80b.up.railway.app"
 });
 
 api.interceptors.request.use((config) => {
